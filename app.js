@@ -10,6 +10,10 @@ var instructions_text = ['if nominative has adjective own domain on the web.', '
 
 var original_text = '<p><em>Wait for it...</em></p>';
 
+// This variable makes the recycleInstructions() function repeat by default.
+
+var keep_going = true;
+
 // This function puts the GE&S text into the web page wherever it finds an element with ID 'shakespeare'
 
 function insertText () {
@@ -53,4 +57,16 @@ function recycleInstructions() {
 
   document.getElementById('instructions').innerHTML = instructions_text_box;
 
+  // Repeat the proess until keep_going = false.
+
+  if (keep_going == true) {
+    setTimeout('replace_random_word()', 2000);
+  }
+
+}
+
+// A function to stop the replace_random_word() function from looping.
+
+function stop () {
+  keep_going = false;
 }
