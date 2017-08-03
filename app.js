@@ -36,11 +36,11 @@ function recycleInstructions() {
 
     if (names[name] == random_name) {
       var random_index = Math.floor(Math.random() * names.length);
-      var random_name = names[random_index]      
+      var random_name = names[random_index]
     }
 
     var sentence_pre = '<p><strong>' + names[name] + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
-    if (random_name == 'Dan' || 'Daniel' || 'Tim') {
+    if (random_name == 'Dan' || random_name == 'Daniel' || random_name == 'Tim') {
       pronouns = ['he', 'his', 'him']
     } else {
       pronouns = ['she', 'her', 'her']
