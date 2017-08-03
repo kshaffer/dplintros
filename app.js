@@ -35,6 +35,8 @@ function recycleInstructions() {
     var random_name = names[random_index]
 
     var sentence_pre = '<p><strong>' + names[name] + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
+    console.log(name)
+    console.log(names[name])
     if (names[name] == 'Dan' || names[name] == 'Daniel' || names[name] == 'Tim') {
       pronouns = ['he', 'him', 'his']
       var sentence = sentence_pre.replace(/she/g, pronouns[0]).replace(/her/g, pronouns[1]).replace(/hers/g, pronouns[2])
