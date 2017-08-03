@@ -34,7 +34,7 @@ function recycleInstructions() {
     var random_index = Math.floor(Math.random() * names.length);
     var random_name = names[random_index]
 
-    if (names[name] == random_name) {
+    while (names[name] == random_name) {
       var random_index = Math.floor(Math.random() * names.length);
       var random_name = names[random_index]
     }
