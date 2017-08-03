@@ -3,7 +3,7 @@
 
 var names = ['Adrienne', 'Asako', 'Sharon', 'Ivonne', 'Amanda', 'Lyra', 'Daniel', 'Theresa', 'Tim', 'Dan'];
 
-var instructions_text = ['if they have their own domain on the web.', 'where they are from.', 'what social network(s) they inhabit (if any).', 'if they have experience writing code.', 'if they have experience working with statistics or "big data".', 'why they decided to come to DPLI.', 'who (if anyone) they already know at DPLI.', 'what they hope to get out of their experience at DPLI/Data Literacies.', 'what their favorite brand of toothpaste is.', 'who their hero is.', 'whose work they admire most in the world of education (technology).', 'what is the most valuable skill or knowledge they can share with the Data Literacies track this week.', 'who has most influenced their work as an educator/technologist.', 'how scary learning to code sounds to them on a scale of 1 to 10 (10 being the scariest).', 'how fun learning to code sounds to them on a scale of 1 to 10 (10 being the funnest).'];
+var instructions_text = ['if they has their own domain on the web.', 'where they is from.', 'what social network(s) they inhabits (if any).', 'if they has experience writing code.', 'if they has experience working with statistics or "big data".', 'why they decided to come to DPLI.', 'who (if anyone) they already knows at DPLI.', 'what they hopes to get out of their experience at DPLI/Data Literacies.', 'what their favorite brand of toothpaste is.', 'who their hero is.', 'whose work they admires most in the world of education (technology).', 'what is the most valuable skill or knowledge they can share with the Data Literacies track this week.', 'who has most influenced their work as an educator/technologist.', 'how scary learning to code sounds to them on a scale of 1 to 10 (10 being the scariest).', 'how fun learning to code sounds to them on a scale of 1 to 10 (10 being the funnest).'];
 
 
 // The text of Green Eggs and Ham, in HTML code
@@ -28,13 +28,19 @@ function recycleInstructions() {
   // Construct an instruction for each person in the set of names
 
   for (name in names) {
+    if (names[name] == 'Dan' || 'Daniel' || 'Tim') {
+      pronouns = ['he', 'him', 'his']
+    } else {
+      pronouns = ['she', 'her', 'hers']
+    }
     var random_index = Math.floor(Math.random() * instructions_text.length);
     var random_instruction = instructions_text[random_index]
 
     var random_index = Math.floor(Math.random() * names.length);
     var random_name = names[random_index]
 
-    var sentence = '<p><strong>' + names[name] + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
+    var sentence_pre = '<p><strong>' + names[name] + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
+    var sentence = sentence_pre.replace(/they/g, pronouns[0]).replace(/their/g, pronouns[1]).replace(/theirs/g, pronouns[2])
     var instructions_text_box = instructions_text_box + sentence
   }
 
