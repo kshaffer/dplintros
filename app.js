@@ -60,7 +60,7 @@ function recycleInstructions() {
   // Repeat the proess until keep_going = false.
 
   if (keep_going == true) {
-    setTimeout('replace_random_word()', 2000);
+    setTimeout('recycleInstructions()', 2000);
   }
 
 }
