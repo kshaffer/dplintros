@@ -3,7 +3,7 @@
 
 var names = ['Adrienne', 'Asako', 'Sharon', 'Ivonne', 'Amanda', 'Lyra', 'Daniel', 'Theresa', 'Tim', 'Dan'];
 
-var instructions_text = ['if she has hew own domain on the web.', 'where she is from.', 'what social network(s) she inhabits (if any).', 'if she has experience writing code.', 'if she has experience working with statistics or "big data".', 'why she decided to come to DPLI.', 'who (if anyone) she already knows at DPLI.', 'what she hopes to get out of her experience at DPLI/Data Literacies.', 'what her favorite brand of toothpaste is.', 'who her hero is.', 'whose work she admires most in the world of education (technology).', 'what is the most valuable skill or knowledge she can share with the Data Literacies track this week.', 'who has most influenced her work as an educator/technologist.', 'how scary learning to code sounds to her on a scale of 1 to 10 (10 being the scariest).', 'how fun learning to code sounds to her on a scale of 1 to 10 (10 being the funnest).'];
+var instructions_text = ['if nominative has adjective own domain on the web.', 'where nominative is from.', 'what social network(s) nominative inhabits (if any).', 'if nominative has experience writing code.', 'if nominative has experience working with statistics or "big data".', 'why nominative decided to come to DPLI.', 'who (if anyone) nominative already knows at DPLI.', 'what nominative hopes to get out of adjective experience at DPLI/Data Literacies.', 'what adjective favorite brand of toothpaste is.', 'who adjective hero is.', 'whose work nominative admires most in the world of education (technology).', 'what is the most valuable skill or knowledge nominative can share with the Data Literacies track this week.', 'who has most influenced adjective work as an educator/technologist.', 'how scary learning to code sounds to dative on a scale of 1 to 10 (10 being the scariest).', 'how fun learning to code sounds to dative on a scale of 1 to 10 (10 being the funnest).'];
 
 
 // The text of Green Eggs and Ham, in HTML code
@@ -36,12 +36,11 @@ function recycleInstructions() {
 
     var sentence_pre = '<p><strong>' + names[name] + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
     if (random_name == 'Dan' || 'Daniel' || 'Tim') {
-      pronouns = ['he', 'him', 'his']
-      console.log(pronouns[0])
-      var sentence = sentence_pre.replace(/she/g, pronouns[0]).replace(/her/g, pronouns[1]).replace(/hers/g, pronouns[2])
+      pronouns = ['he', 'his', 'him']
     } else {
-      var sentence = sentence_pre
+      pronouns = ['she', 'her', 'her']
     }
+    var sentence = sentence_pre.replace(/nominative/g, pronouns[0]).replace(/adjective/g, pronouns[1]).replace(/dative/g, pronouns[2])
     var instructions_text_box = instructions_text_box + sentence
   }
 
