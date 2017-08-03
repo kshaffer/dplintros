@@ -1,7 +1,7 @@
 // Lists of English words that rhyme with line-ending words in Green Eggs and Ham
 // These are JavaScript arrays
 
-var names = ['Adrienne', 'Asako', 'Sharon', 'Ivonne', 'Amanda', 'Lyra', 'Daniel', 'Theresa', 'Tim', 'Dan'];
+var names = ['Adrienne', 'Amanda', 'Asako', 'Dan', 'Daniel', 'Ivonne', 'Lyra', 'Sharon', 'Theresa', 'Tim'];
 
 var instructions_text = ['if nominative has adjective own domain on the web.', 'where nominative is from.', 'what social network(s) nominative inhabits (if any).', 'if nominative has experience writing code.', 'if nominative has experience working with statistics or "big data".', 'why nominative decided to come to DPLI.', 'who (if anyone) nominative already knows at DPLI.', 'what nominative hopes to get out of adjective experience at DPLI/Data Literacies.', 'what adjective favorite brand of toothpaste is.', 'who adjective hero is.', 'whose work nominative admires most in the world of education (technology).', 'what is the most valuable skill or knowledge nominative can share with the Data Literacies track this week.', 'who has most influenced adjective work as an educator/technologist.', 'how scary learning to code sounds to dative on a scale of 1 to 10 (10 being the scariest).', 'how fun learning to code sounds to dative on a scale of 1 to 10 (10 being the funnest).', 'if nominative read any of the suggested readings before coming to DPLI. :)'];
 
@@ -60,7 +60,7 @@ function recycleInstructions() {
   // Repeat the proess until keep_going = false.
 
   if (keep_going == true) {
-    setTimeout('recycleInstructions()', 2000);
+    setTimeout('recycleInstructions()', 20000);
   }
 
 }
