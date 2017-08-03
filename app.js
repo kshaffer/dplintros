@@ -34,7 +34,7 @@ function recycleInstructions() {
     var random_index = Math.floor(Math.random() * names.length);
     var random_name = names[random_index]
 
-    var sentence = '<p><strong>' + name + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
+    var sentence = '<p><strong>' + names[name] + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
     var instructions_text_box = instructions_text_box + sentence
   }
 
