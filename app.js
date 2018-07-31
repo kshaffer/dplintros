@@ -49,7 +49,7 @@ function recycleInstructions() {
     } else if (random_name == 'Adrienne' || random_name == 'Angie' || random_name == 'Anqi' || random_name == 'Evelyn' || random_name == 'Hiroyo' || random_name == 'Kim' || random_name == 'Lee') {
       pronouns = ['she', 'her', 'her']
     } else {
-      pronouns = ['Deb', 'Deb', 'Deb']
+      pronouns = ['Deb', 'Deb\'s', 'Deb']
     }
     var sentence = sentence_pre.replace(/nominative/g, pronouns[0]).replace(/adjective/g, pronouns[1]).replace(/dative/g, pronouns[2])
     var instructions_text_box = instructions_text_box + sentence
