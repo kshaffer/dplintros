@@ -1,10 +1,10 @@
 // Lists of English words that rhyme with line-ending words in Green Eggs and Ham
 // These are JavaScript arrays
 
-var names = ['Adrienne', 'Angie', 'Anqi', 'Bob', 'Cartland', 'Deb', 'Evelyn', 'Hiroyo', 'Kim', 'Kris', 'Lee', 'Mark', 'Timothy', 'Zachary'];
+var names = ['Ravi', 'Annicka', 'Alaina', 'Robert', 'Mitchell', 'Erica', 'Kimberly', 'Alfonso', 'Krissy', 'Kris', 'Susan', 'Ben', 'Brenda', 'Kristin', 'Florence', 'Neil', 'Scott'];
 
-var instructions_text = ['if nominative has adjective own domain on the web.', 'where nominative is from.', 'what social network(s) nominative inhabits (if any).', 'if nominative has experience writing code.', 'if nominative has experience working with statistics or "big data".', 'why nominative decided to come to DPLI.', 'who (if anyone) nominative already knows at DPLI.', 'what nominative hopes to get out of adjective experience at DPLI/Data Literacies.', 'what adjective favorite brand of toothpaste is.', 'who adjective hero is.', 'whose work nominative admires most in the world of education (technology).', 'what is the most valuable skill or knowledge nominative can share with the Data Literacies track this week.', 'who has most influenced adjective work as an educator/technologist.', 'how scary learning to code sounds to dative on a scale of 1 to 10 (10 being the scariest).', 'how fun learning to code sounds to dative on a scale of 1 to 10 (10 being the funnest).', 'if nominative read any of the suggested readings before coming to DPLI. :)'];
-
+var instructions_text = ['if nominative has adjective own domain on the web.', 'where nominative is from.', 'what social network(s) nominative inhabits (if any).', 'if nominative has experience writing code.', 'if nominative has experience working with statistics or "big data".', 'why nominative decided to come to D3.', 'who (if anyone) nominative already knows at D3.', 'what nominative hopes to get out of adjective experience at D3.', 'what adjective favorite brand of toothpaste is.', 'who adjective hero is.', 'whose work nominative admires most in the world of education (technology).', 'what is the most valuable skill or knowledge nominative can share with this group.', 'who has most influenced adjective work as an educator/technologist.', 'how secure adjective digital identity is.'];
+// , 'how scary learning to code sounds to dative on a scale of 1 to 10 (10 being the scariest).', 'if nominative read any of the suggested readings before coming to DPLI. :)', 'how fun learning to code sounds to dative on a scale of 1 to 10 (10 being the funnest).'
 
 // The text of Green Eggs and Ham, in HTML code
 
@@ -44,13 +44,15 @@ function recycleInstructions() {
     }
 
     var sentence_pre = '<p><strong>' + names[name] + ',</strong> ask ' + random_name + ' ' + random_instruction + '</p>'
-    if (random_name == 'Bob' || random_name == 'Cartland' || random_name == 'Kris' || random_name == 'Mark' || random_name == 'Timothy' || random_name == 'Zachary') {
+/*    if (random_name == 'Bob' || random_name == 'Cartland' || random_name == 'Kris' || random_name == 'Mark' || random_name == 'Timothy' || random_name == 'Zachary') {
       pronouns = ['he', 'his', 'him']
     } else if (random_name == 'Adrienne' || random_name == 'Angie' || random_name == 'Anqi' || random_name == 'Evelyn' || random_name == 'Hiroyo' || random_name == 'Kim' || random_name == 'Lee') {
       pronouns = ['she', 'her', 'her']
     } else {
       pronouns = ['Deb', 'Deb\'s', 'Deb']
     }
+    */
+    pronouns = ['they', 'their', 'them']
     var sentence = sentence_pre.replace(/nominative/g, pronouns[0]).replace(/adjective/g, pronouns[1]).replace(/dative/g, pronouns[2])
     var instructions_text_box = instructions_text_box + sentence
   }
