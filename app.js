@@ -2,10 +2,10 @@
 // These are JavaScript arrays
 
 //var names = ['Ravi', 'Annicka', 'Alaina', 'Robert', 'Mitchell', 'Erica', 'Kimberly', 'Alfonso', 'Krissy', 'Kris', 'Susan', 'Ben', 'Brenda', 'Kristin', 'Florence', 'Neil', 'Scott'];
-var names = ['Lee', 'Ravi', 'Laurie', 'Wendy', 'Jessica', 'Mitchell', 'Rachel', 'Sarah', 'Autumm', 'Angel', 'Andrew', 'Alphonso', 'Nancy', 'Kris', 'Clelia', 'Ben', 'Kristin', 'Florence', 'Neil', 'Scott']
+var names = ['Daniel', 'Ellen', 'Hillary', 'Jenna', 'Kerry', 'Kevin', 'Kim', 'Kris', 'Michelle', 'Misty', 'Taylor']
 
-var instructions_text = ['if nominative have adjective own domain on the web.', 'where nominative are from.', 'what social network(s) nominative inhabit (if any).', 'if nominative have experience writing code.', 'if nominative have experience working with statistics or "big data".', 'why nominative decided to come to D3.', 'who (if anyone) nominative already know at D3.', 'what nominative hope to get out of adjective experience at D3.', 'what adjective favorite brand of toothpaste is.', 'who adjective hero is.', 'whose work nominative admire most in the world of education (technology).', 'what is the most valuable skill or knowledge nominative can share with this group.', 'who has most influenced adjective work as an educator/technologist.', 'how secure adjective digital identity is.'];
-// , 'how scary learning to code sounds to dative on a scale of 1 to 10 (10 being the scariest).', 'if nominative read any of the suggested readings before coming to DPLI. :)', 'how fun learning to code sounds to dative on a scale of 1 to 10 (10 being the funnest).'
+var instructions_text = ['if nominative have adjective own domain on the web.', 'where nominative are from.', 'what social network(s) nominative inhabit (if any).', 'if nominative have experience writing code.', 'if nominative have experience working with statistics or "big data".', 'why nominative decided to come to DPL.', 'who (if anyone) nominative already know at DPL.', 'what nominative hope to get out of adjective experience at DPL.', 'what adjective favorite brand of toothpaste is.', 'who adjective hero is.', 'whose work nominative admire most in the world of education (technology).', 'what is the most valuable skill or knowledge nominative can share with this group.', 'who has most influenced adjective work as an educator/technologist.', 'how secure adjective digital identity is.' , 'how scary learning to code sounds to dative on a scale of 1 to 10 (10 being the scariest).', 'if nominative read any of the suggested readings before coming to DPL. :)', 'how fun learning to code sounds to dative on a scale of 1 to 10 (10 being the funnest).'];
+//
 
 // The text of Green Eggs and Ham, in HTML code
 
